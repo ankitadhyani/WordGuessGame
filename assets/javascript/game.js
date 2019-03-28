@@ -2,9 +2,19 @@
 
     // Create variables that hold references to the places in the HTML where we want to display things.
     var winsText = document.getElementById("wins-text");
-    var lossesText = document.getElementById("losses-text");
+    var currentWordText = document.getElementById("currentWord-text");
     var guessesLeftText = document.getElementById("guessesLeft-text");
     var yourGuessesSoFarText = document.getElementById("yourGuessesSoFar-text");
+
+
+    console.log(dictionary);
+
+
+
+
+
+
+
 
 
     // Function defined to get computer generated random alphabet 
