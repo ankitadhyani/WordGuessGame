@@ -1,0 +1,16 @@
+body {
+    /* background-color: black; */
+}
+h1 {
+    color: teal;
+    text-align: center;
+}
+
+img {
+    margin-left: 20%;
+}
+
+/* .dottedBorder {
+    border: 2px;
+    border-style: dotted;
+} */
