@@ -67,6 +67,9 @@
     // This function is run whenever the user presses a key
     document.onkeyup = function(event) {
 
+
+
+
         //Reset "YOU WIN" text onkeyup event 
         displayWinText.textContent = ""; 
 
@@ -79,6 +82,14 @@
         //Append user's guess onto the yourGuessesSoFar[] array
         yourGuessesSoFar.push(userGuess);
 
+        //Test Case: Check to see if user enetered any key other than A..Z
+        if(!(event.keyCode > 64 && event.keyCode < 91)) {
+            console.log("You have entered invalid character.");
+
+            alert("You have entered invalid character. Only press letters A..Z...");
+            yourGuessesSoFar.pop();
+            guessesLeft++;
+        }
 
         //------------ CODE LOGIC STARTS ---------
 
