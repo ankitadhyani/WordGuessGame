@@ -82,13 +82,18 @@
         //Append user's guess onto the yourGuessesSoFar[] array
         yourGuessesSoFar.push(userGuess);
 
+        
         //Test Case: Check to see if user enetered any key other than A..Z
         if(!(event.keyCode > 64 && event.keyCode < 91)) {
             console.log("You have entered invalid character.");
 
             alert("You have entered invalid character. Only press letters A..Z...");
-            yourGuessesSoFar.pop();
-            guessesLeft++;
+
+            //In case invalid character is pushed onto the array, then remove it
+            yourGuessesSoFar.pop(); 
+
+            //In case guessesLeft counter is decreased because of invalid character entered then increase guessesLeft counter to ignore the invalid guess
+            guessesLeft++; 
         }
 
         //------------ CODE LOGIC STARTS ---------
