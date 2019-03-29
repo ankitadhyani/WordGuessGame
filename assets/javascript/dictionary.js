@@ -1,4 +1,5 @@
 
+//Below is an array of 20 words that behave like a dictionary
 var dictionary = [
     "advise",
     "tremble",
@@ -10,14 +11,14 @@ var dictionary = [
     "frequent",
     "laugh",
     "painful",
-    "peel",
+    "balance",
     "history",
     "mountain",
     "jewel",
-    "ritzy",
+    "complex",
     "medical",
-    "impolite",
+    "playground",
     "marvelous",
     "shake",
-    "furry"
+    "spring"
 ];
