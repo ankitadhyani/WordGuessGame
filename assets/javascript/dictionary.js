@@ -1,5 +1,6 @@
 
 //Below is an array of 20 words that behave like a dictionary
+
 var dictionary = [
     "advise",
     "tremble",

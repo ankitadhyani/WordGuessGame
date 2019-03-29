@@ -7,7 +7,6 @@
     var yourGuessesSoFar = [];
     var word = "";
     var guessedWord = "";
-    //var winFlag = false; //Creating a win flag to be set to true only if user wins
 
 
     // Create variables that hold references to the places in the HTML where we want to display things.
@@ -40,16 +39,16 @@
         console.log("Random word is: " + word);
 
         word = word.split(""); //Break word to charcter array
-        console.log("Random word after split: " + word);
 
-        guessedWord = []; //Initially underscore is used to denote the word
+        guessedWord = [];  //Reset guessedWord
         
         for(var i = 0 ; i < word.length ; i++) {
             
+            //Initially underscore is used to denote the word
             guessedWord[i] = "__ ";
 
         }
-        //currentWordText.append(guessedWord[i] + " ");
+
         console.log("guessedWord: " + guessedWord);
 
         //Join the array to form a string and store in 'currentWord'
@@ -59,6 +58,7 @@
         currentWordText.textContent = currentWord;
         
     }
+
 
     //Start the game for the 1st time
     gameStartsHere();
@@ -88,7 +88,7 @@
             //If userGuess alphabet is anywhere in the "word" then replace '_' with the alphabet
             for(var index=0 ; index<word.length ; index++) {
 
-                //Find 1st occurance of 'userGuess' in 'word' starting at index=i
+                //Find 1st occurance of 'userGuess' in 'word' starting at index
                 index = word.indexOf(userGuess, index);
                 if(index !== -1) {
 
